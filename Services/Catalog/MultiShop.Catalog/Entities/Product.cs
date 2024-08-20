@@ -18,6 +18,6 @@ namespace MultiShop.Catalog.Entities
         // [BsonIgnore] tells MongoDB not to keep this value in the database
 
         [BsonIgnore] 
-        public Category? category { get; set; }
+        public Category Category { get; set; }
     }
 }
