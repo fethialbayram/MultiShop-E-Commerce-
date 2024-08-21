@@ -15,7 +15,7 @@ namespace MultiShop.Catalog.Entities
         public string? productDescription { get; set; }
         public string? categoryId { get; set; }
 
-        // [BsonIgnore] tells MongoDB not to keep this value in the database
+        // [BsonIgnore] tells MongoDB NOT to keep this value in the database
 
         [BsonIgnore] 
         public Category? Category { get; set; }
