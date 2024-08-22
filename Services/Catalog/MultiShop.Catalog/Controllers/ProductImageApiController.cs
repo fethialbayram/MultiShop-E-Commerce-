@@ -49,7 +49,7 @@ namespace MultiShop.Catalog.Controllers
         public async Task<IActionResult> UpdateProductImage(UpdateProductImageDto updateProductImageDto)
         {
             await _productImageService.UpdateProductImageAsync(updateProductImageDto);
-            return Ok("Ürün görseli başarıyla güncellendi.")
+            return Ok("Ürün görseli başarıyla güncellendi.");
         }
     }
 }
