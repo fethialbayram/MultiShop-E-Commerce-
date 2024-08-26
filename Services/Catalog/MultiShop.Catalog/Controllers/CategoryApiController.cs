@@ -31,7 +31,7 @@ namespace MultiShop.Catalog.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateCategory(CreateCatagoryDto createCatagoryDto)
+        public async Task<IActionResult> CreateCategory(CreateCategoryDto createCatagoryDto)
         {
             await _categoryService.CreateCategoryAsync(createCatagoryDto);
             return Ok("Kategori başarıyla eklendi.");
@@ -46,7 +46,7 @@ namespace MultiShop.Catalog.Controllers
 
         [HttpPut]
 
-        public async Task<IActionResult> UpdateCategory (UpdateCategoryDto updateCategoryDto)
+        public async Task<IActionResult> UpdateCategory(UpdateCategoryDto updateCategoryDto)
         {
             await _categoryService.UpdateCategoryAsync(updateCategoryDto);
             return Ok("Kategori başarıyla güncellendi.");
